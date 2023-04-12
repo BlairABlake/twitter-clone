@@ -1,0 +1,6 @@
+<div class="tweet-list">
+  <div class="tweet-detail-wrapper" *ngFor="let tweetDetail of tweetDetails">
+    <app-tweet-detail [tweetDetail]="tweetDetail" (expanded)="onExpandDetails()"></app-tweet-detail>
+  </div>
+</div>
+

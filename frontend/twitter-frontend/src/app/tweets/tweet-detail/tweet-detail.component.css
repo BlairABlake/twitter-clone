@@ -1,0 +1,47 @@
+.user-name {
+  font-weight: bold;
+  margin-right: 12px;
+  margin-bottom: 2px;
+}
+
+.user-image {
+  line-height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.datetime {
+  color: rgb(83, 100, 113);
+}
+
+.tweet-detail {
+  font-family: "Avenir Book", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  flex-grow: 2;
+}
+
+.side-bar {
+  flex-basis: 48px;
+  min-width: 48px;
+}
+
+.action-list {
+  max-height: 20px;
+}
+
+.action {
+  width: 60px;
+}
+
+.action span {
+  font-size: 13px;
+}
+
+.icon {
+  width: 1.25em;
+}

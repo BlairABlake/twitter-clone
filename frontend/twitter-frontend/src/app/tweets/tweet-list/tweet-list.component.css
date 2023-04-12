@@ -1,0 +1,13 @@
+.tweet-list {
+  border-left: 1.5px solid rgb(247, 249, 249);
+  border-right: 1.5px solid rgb(247, 249, 249);
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tweet-detail-wrapper {
+  width: 100%;
+}

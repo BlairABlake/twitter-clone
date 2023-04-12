@@ -1,0 +1,49 @@
+.icon {
+  height: 1.95rem;
+}
+
+.twitter-icon {
+  height: 2.5rem;
+  color: rgb(29, 155, 240);
+  line-height: 20px;
+}
+
+.write-icon-wrapper {
+  background-color: rgb(29, 155, 240);
+}
+
+.write-icon {
+  color: rgb(255, 255, 255);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-item {
+  padding: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.menu-item-name {
+  line-height: 24px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 16px;
+}
+
+.menu-item-text {
+  display: none;
+}
+
+
+@media (min-width: 1100px) {
+  .menu-item-text {
+    display: inline-block;
+  }
+}
+
+
