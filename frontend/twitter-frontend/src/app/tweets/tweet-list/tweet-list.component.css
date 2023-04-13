@@ -1,7 +1,7 @@
 .tweet-list {
   border-left: 1.5px solid rgb(247, 249, 249);
   border-right: 1.5px solid rgb(247, 249, 249);
-  width: 600px;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
