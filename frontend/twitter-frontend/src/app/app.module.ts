@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { TweetsModule } from './tweets/tweets.module';
 import { UsersModule } from './users/users.module';
 import { TrendsModule } from './trends/trends.module';
-import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LinkComponent } from "./link/link.component";
+import { HomeModule } from './home/home.module';
 
 @NgModule({
     declarations: [
@@ -22,9 +22,9 @@ import { LinkComponent } from "./link/link.component";
         TweetsModule,
         UsersModule,
         TrendsModule,
-        HomeComponent,
         BrowserAnimationsModule,
-        LinkComponent
+        LinkComponent,
+        HomeModule
     ]
 })
 export class AppModule { }
