@@ -6,6 +6,7 @@ import { TweetsModule } from "../tweets/tweets.module";
 import { TrendsModule } from "../trends/trends.module";
 import { HederMobileComponent } from './heder-mobile/heder-mobile.component';
 import { LinkComponent } from '../link/link.component';
+import { AccountsModule } from "../accounts/accounts.module";
 
 
 
@@ -15,14 +16,15 @@ import { LinkComponent } from '../link/link.component';
         HederMobileComponent,
         HeaderComponent
     ],
+    exports: [
+        HomeComponent
+    ],
     imports: [
         CommonModule,
         TweetsModule,
         TrendsModule,
-        LinkComponent
-    ],
-    exports: [
-      HomeComponent
+        LinkComponent,
+        AccountsModule
     ]
 })
 export class HomeModule { }

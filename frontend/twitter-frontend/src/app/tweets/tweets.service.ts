@@ -33,7 +33,63 @@ export class TweetsService {
         },
         tweetText: "Portland",
         date: new Date(Date.now())
-      }
+      },
+      {
+        user: {
+          name: "Clown World",
+          image: "https://pbs.twimg.com/profile_images/1589731437959208960/iThAxQ4j_x96.jpg"
+        },
+        tweetText: "Post the last meme you saved on your phone 👇",
+        date: new Date("2020-05-12T23:50:21.817Z")
+      },
+      {
+        user: {
+          name: "Clown World",
+          image: "https://pbs.twimg.com/profile_images/1589731437959208960/iThAxQ4j_x96.jpg"
+        },
+        tweetText: "Post the last meme you saved on your phone 👇",
+        date: new Date("2020-05-12T23:50:21.817Z")
+      },
+      {
+        user: {
+          name: "Clown World",
+          image: "https://pbs.twimg.com/profile_images/1589731437959208960/iThAxQ4j_x96.jpg"
+        },
+        tweetText: "Post the last meme you saved on your phone 👇",
+        date: new Date("2020-05-12T23:50:21.817Z")
+      },
+      {
+        user: {
+          name: "Clown World",
+          image: "https://pbs.twimg.com/profile_images/1589731437959208960/iThAxQ4j_x96.jpg"
+        },
+        tweetText: "Post the last meme you saved on your phone 👇",
+        date: new Date("2020-05-12T23:50:21.817Z")
+      },
+      {
+        user: {
+          name: "Clown World",
+          image: "https://pbs.twimg.com/profile_images/1589731437959208960/iThAxQ4j_x96.jpg"
+        },
+        tweetText: "Post the last meme you saved on your phone 👇",
+        date: new Date("2020-05-12T23:50:21.817Z")
+      },
+      {
+        user: {
+          name: "Clown World",
+          image: "https://pbs.twimg.com/profile_images/1589731437959208960/iThAxQ4j_x96.jpg"
+        },
+        tweetText: "Post the last meme you saved on your phone 👇",
+        date: new Date("2020-05-12T23:50:21.817Z")
+      },
+      {
+        user: {
+          name: "Clown World",
+          image: "https://pbs.twimg.com/profile_images/1589731437959208960/iThAxQ4j_x96.jpg"
+        },
+        tweetText: "Post the last meme you saved on your phone 👇",
+        date: new Date("2020-05-12T23:50:21.817Z")
+      },
     ]
   }
 }

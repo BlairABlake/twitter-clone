@@ -19,15 +19,14 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  white-space: nowrap;
   overflow: hidden !important;
   text-overflow: ellipsis;
   flex-grow: 2;
 }
 
 .side-bar {
-  flex-basis: 48px;
-  min-width: 48px;
+  flex-basis: 60px;
+  min-width: 60px;
 }
 
 .action-list {
