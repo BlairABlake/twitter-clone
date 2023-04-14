@@ -11,5 +11,6 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class LinkComponent {
   @Input() href = ""
-  @Input() color = ""
+  @Input() w100 = false
+  @Input() textCenter = false
 }
