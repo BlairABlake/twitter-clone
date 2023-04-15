@@ -7,6 +7,7 @@ import { TrendsModule } from "../trends/trends.module";
 import { HederMobileComponent } from './heder-mobile/heder-mobile.component';
 import { LinkComponent } from '../link/link.component';
 import { AccountsModule } from "../accounts/accounts.module";
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -24,7 +25,8 @@ import { AccountsModule } from "../accounts/accounts.module";
         TweetsModule,
         TrendsModule,
         LinkComponent,
-        AccountsModule
+        AccountsModule,
+        MatButtonModule
     ]
 })
 export class HomeModule { }
