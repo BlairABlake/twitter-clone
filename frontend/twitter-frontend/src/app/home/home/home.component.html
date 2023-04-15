@@ -1,45 +1,56 @@
-<div *ngIf="isTablet">
-  <div class="d-flex flex-column">
-    <div class="d-flex">
-      <app-account-small-mobile class="flex-grow-3 w-100 p-2"></app-account-small-mobile>
-      <app-link class="d-flex align-items-center flex-grow-1">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="twitter-icon icon m-2" fill="currentColor"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
-      </app-link>
-      <div class="flex-grow-3 w-100"></div>
-    </div>
-    <div class="sticky-top bg-white w-100 mt-2 mb-2 border-bottom">
-      <div class="d-flex justify-content-around">
-        <app-link>For you</app-link>
-        <app-link>Following</app-link>
+<div class="home">
+  <div *ngIf="isTablet">
+    <div class="d-flex flex-column">
+      <div class="d-flex">
+        <app-account-small-mobile class="flex-grow-3 w-100 p-2"></app-account-small-mobile>
+        <app-link class="d-flex align-items-center flex-grow-1">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="twitter-icon icon m-2" fill="currentColor"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
+        </app-link>
+        <div class="flex-grow-3 w-100"></div>
       </div>
+      <div class="sticky-top bg-white w-100 mt-2 mb-2 border-bottom">
+        <div class="d-flex justify-content-around">
+          <app-link>For you</app-link>
+          <app-link>Following</app-link>
+        </div>
+      </div>
+      <app-tweet-list></app-tweet-list>
     </div>
-    <app-tweet-list></app-tweet-list>
+    <app-heder-mobile></app-heder-mobile>
   </div>
-  <app-heder-mobile></app-heder-mobile>
-</div>
-<div *ngIf="!isTablet">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <header class="d-flex flex-column w-100 align-items-end">
-          <div class="d-flex flex-column pl-1 pr-1 w-80 align-items-center">
-            <app-header></app-header>
-            <app-account-small class="mt-3 w-100"></app-account-small>
-          </div>
-        </header>
-      </div>
-      <div class="col">
-        <div class="sticky-top">
-          <span>Home</span>
-          <div class="d-flex justify-content-center">
-            <app-link class="w-100 text-center">For you</app-link>
-            <app-link class="w-100 text-center">Following</app-link>
+  <div *ngIf="!isTablet">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex flex-column w-100 align-items-end">
+            <div class="position-fixed">
+              <header>
+                <div class="d-flex flex-column pl-1 pr-1 w-80 align-items-center">
+                  <app-header></app-header>
+                  <app-account-small class="mt-3 w-100"></app-account-small>
+                </div>
+              </header>
+            </div>
           </div>
         </div>
-        <app-tweet-list></app-tweet-list>
-      </div>
-      <div class="col">
-        <app-trend-list class="m-5"></app-trend-list>
+        <div class="col">
+          <div class="sticky-top bg-white">
+            <span class="h6 h-100">Home</span>
+            <div class="d-flex justify-content-center">
+              <app-link class="w-100 text-center">For you</app-link>
+              <app-link class="w-100 text-center">Following</app-link>
+            </div>
+          </div>
+          <app-tweet-list></app-tweet-list>
+        </div>
+        <div class="col">
+          <div class="d-flex flex-column w-100 align-items-start">
+            <div class="position-fixed w-25">
+              <app-search text="Search Twitter" class="m-5"></app-search>
+              <app-trend-list class=""></app-trend-list>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
