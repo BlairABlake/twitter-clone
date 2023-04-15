@@ -1,8 +1,8 @@
 
-<div class="d-flex align-items-center">
+<app-link class="d-flex align-items-center rounded" [flex]="true">
   <button mat-icon-button class="user-image m-3" [style.backgroundImage]="'url(' + account.image + ')'"></button>
   <div class="d-flex flex-column account-name">
     <span>{{account.displayname}}</span>
     <span>{{account.username}}</span>
   </div>
-</div>
+</app-link>
