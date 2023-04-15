@@ -1,0 +1,14 @@
+<div class="d-flex flex-column">
+  <div *ngIf="trendDetail.field != ''">
+    <span class="text-muted fs-6">{{trendDetail.field}} · Trending</span>
+    <span></span>
+  </div>
+  <div *ngIf="trendDetail.area != '' && trendDetail.field == ''">
+    <span class="text-muted fs-6">Trending in {{trendDetail.area}}</span>
+  </div>
+  <span class="h6">{{trendDetail.text}}</span>
+  <div *ngIf="trendDetail.volume != -1">
+    <app-number [x]="trendDetail.volume" class="fs-6"></app-number>
+  </div>
+</div>
+

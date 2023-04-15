@@ -1,1 +1,10 @@
-<p>trend-list works!</p>
+<mat-card class="bg-light w-100 trend-list p-4 pt-0 pb-0">
+  <mat-card-header>
+    <mat-card-title>What's happening</mat-card-title>
+  </mat-card-header>
+  <div class="d-flex flex-column h-100">
+    <div *ngFor="let trend of trends">
+      <app-trend-detail class="p-2" [trendDetail]="trend"></app-trend-detail>
+    </div>
+  </div>
+</mat-card>
