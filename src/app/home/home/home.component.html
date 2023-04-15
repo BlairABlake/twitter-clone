@@ -21,7 +21,7 @@
   <div *ngIf="!isTablet">
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
+        <div class="col-3">
           <div class="d-flex flex-column w-100 align-items-end">
             <div class="position-fixed">
               <header>
@@ -33,19 +33,21 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="sticky-top bg-white">
-            <span class="h6 h-100">Home</span>
-            <div class="d-flex justify-content-center">
-              <app-link class="w-100 text-center">For you</app-link>
-              <app-link class="w-100 text-center">Following</app-link>
+        <div class="col-6 d-flex flex-column align-items-center">
+          <div class="w-100 home-main ">
+            <div class="sticky-top bg-white">
+              <span class="h6 h-100">Home</span>
+              <div class="d-flex justify-content-center">
+                <app-link class="w-100 text-center">For you</app-link>
+                <app-link class="w-100 text-center">Following</app-link>
+              </div>
             </div>
+            <app-tweet-list></app-tweet-list>
           </div>
-          <app-tweet-list></app-tweet-list>
         </div>
-        <div class="col">
-          <div class="d-flex flex-column w-100 align-items-start">
-            <div class="position-fixed w-25">
+        <div class="col-2">
+          <div class="m-1 d-flex flex-column w-100 align-items-start">
+            <div class="position-fixed">
               <app-search text="Search Twitter" class="m-5"></app-search>
               <app-trend-list class=""></app-trend-list>
             </div>
