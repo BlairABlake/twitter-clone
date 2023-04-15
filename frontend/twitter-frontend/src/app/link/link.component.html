@@ -1,1 +1,5 @@
-<a [href]="href" class="link" [ngClass]="[w100 ? 'w-100' : '', textCenter ? 'text-center' : '']" ><ng-content></ng-content></a>
+<a [href]="href" [ngClass]="[w100 ? 'w-100' : '', textCenter ? 'text-center' : '']" >
+  <div class="p-2" [ngClass]="flex ? 'd-flex align-items-center justify-content-center' : ''">
+    <ng-content></ng-content>
+  </div>
+</a>

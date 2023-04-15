@@ -1,15 +1,21 @@
-.link {
+:host {
   background-color: transparent;
   transition: background-color 0.2s linear;
   word-wrap: break-word;
   white-space: normal;
-  padding: 0.25em 0.70em;
-  border-radius: 40px;
+  color: inherit;
+}
+
+
+:host:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+:host a {
   color: inherit;
   text-decoration: none;
 }
 
-
-.link:hover {
-  background-color: rgba(0,0,0,0.1);
+.rounding {
+  border-radius: 40px;
 }
