@@ -22,35 +22,17 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-3">
-          <div class="d-flex flex-column w-100 align-items-end">
-            <div class="position-fixed">
-              <header>
-                <div class="d-flex flex-column pl-1 pr-1 w-80 align-items-center">
-                  <app-header></app-header>
-                  <app-account-small class="mt-3 w-100"></app-account-small>
-                </div>
-              </header>
-            </div>
+          <div class="d-flex justify-content-end">
+            <app-header class="position-fixed"></app-header>
           </div>
         </div>
-        <div class="col-6 d-flex flex-column align-items-center">
-          <div class="w-100 home-main ">
-            <div class="sticky-top bg-white">
-              <span class="h6 h-100">Home</span>
-              <div class="d-flex justify-content-center">
-                <app-link class="w-100 text-center">For you</app-link>
-                <app-link class="w-100 text-center">Following</app-link>
-              </div>
-            </div>
-            <app-tweet-list></app-tweet-list>
-          </div>
+        <div class="col-6">
+          <app-tweet-list></app-tweet-list>
         </div>
-        <div class="col-2">
-          <div class="m-1 d-flex flex-column w-100 align-items-start">
-            <div class="position-fixed">
-              <app-search text="Search Twitter" class="m-5"></app-search>
-              <app-trend-list class=""></app-trend-list>
-            </div>
+        <div class="col-3">
+          <div class="d-flex flex-column position-fixed">
+            <app-search class="mb-3 mt-3"></app-search>
+            <app-trend-list></app-trend-list>
           </div>
         </div>
       </div>

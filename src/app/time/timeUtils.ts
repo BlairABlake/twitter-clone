@@ -3,7 +3,7 @@ const months = [ "Jan", "Feb", "Mar", "Apr", "May", "June",
 
 export function diffString(datetime: Date, nowDate?: Date): string {
   const now = nowDate ?? new Date(Date.now())
-  const sec_diff = datetime.getSeconds() - now.getSeconds()
+  const sec_diff = Math.abs(datetime.getSeconds() - now.getSeconds())
   const min_diff = datetime.getMinutes() - now.getMinutes()
   const hour_diff = datetime.getHours() - now.getHours()
   const date_diff = datetime.getDate() - now.getDate()

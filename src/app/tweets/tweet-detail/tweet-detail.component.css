@@ -1,7 +1,12 @@
+.tweet-detail {
+  font-size: var(--font-size-s);
+  font-family: var(--default-font);
+}
+
 .user-name {
-  font-weight: bold;
-  margin-right: 12px;
-  margin-bottom: 2px;
+  font-weight: var(--font-weight-b);
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .user-image {
@@ -11,36 +16,26 @@
 }
 
 .datetime {
-  color: rgb(83, 100, 113);
+  color: var(--text-s-color);
 }
 
-.tweet-detail {
-  font-family: "Avenir Book", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
-  flex-grow: 2;
-}
-
-.side-bar {
-  flex-basis: 60px;
-  min-width: 60px;
-}
-
-.action-list {
-  max-height: 20px;
-}
-
-.action {
-  width: 60px;
-}
-
-.action span {
-  font-size: 13px;
+.tweet {
+  line-height: var(--font-size-s);
+  font-weight: var(--font-weight-b);
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .icon {
   width: 1.25em;
+}
+
+.icon-text {
+  color: inherit;
+  font-family: inherit;
+  font-size: var(--font-size-ss);
+}
+
+.tweet-infos {
+  max-width: 425px;
 }

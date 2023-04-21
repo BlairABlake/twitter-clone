@@ -1,0 +1,12 @@
+:host:hover {
+  text-decoration-line: underline;
+}
+
+:host a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rounding {
+  border-radius: 40px;
+}

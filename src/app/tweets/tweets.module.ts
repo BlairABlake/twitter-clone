@@ -5,6 +5,9 @@ import { TweetDetailComponent } from './tweet-detail/tweet-detail.component';
 import { TimeComponent } from "../time/time.component";
 import { LinkComponent } from "../link/link.component";
 import { MatButtonModule } from '@angular/material/button';
+import { NgOptimizedImage } from '@angular/common'
+import { LinkTextComponent } from '../link-text/link-text.component';
+import {MatDividerModule} from "@angular/material/divider"
 
 
 
@@ -20,7 +23,10 @@ import { MatButtonModule } from '@angular/material/button';
         CommonModule,
         TimeComponent,
         LinkComponent,
-        MatButtonModule
+        MatButtonModule,
+        NgOptimizedImage,
+        LinkTextComponent,
+        MatDividerModule,
     ]
 })
 export class TweetsModule { }

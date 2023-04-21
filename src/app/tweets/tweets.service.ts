@@ -28,10 +28,14 @@ export class TweetsService {
       },
       {
         user: {
-          name: "Clown World",
-          image: "https://pbs.twimg.com/profile_images/1589731437959208960/iThAxQ4j_x96.jpg"
+          name: "Elvis",
+          image: "https://pbs.twimg.com/profile_images/939313677647282181/vZjFWtAn_x96.jpg"
         },
-        tweetText: "Portland",
+        tweetText: `Prompt engineering tools are appearing everywhere!
+
+        We're also seeing a set of standardized prompt engineering techniques and tools to build effectively with LLMs.
+
+        Just this week:`,
         date: new Date(Date.now())
       },
       {
