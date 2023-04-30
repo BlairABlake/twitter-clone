@@ -15,6 +15,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NotoficationsComponent } from './notofications/notofications.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
     declarations: [
@@ -37,7 +38,8 @@ import { NotoficationsComponent } from './notofications/notofications.component'
         TrendsModule,
         BrowserAnimationsModule,
         LinkComponent,
-        HomeModule
+        HomeModule,
+        SearchComponent
     ]
 })
 export class AppModule { }

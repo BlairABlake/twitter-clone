@@ -6,6 +6,7 @@
 
 .account-name {
   display: none;
+  font-size: var(--font-size-s);
 }
 
 @media (min-width: 1100px) {
