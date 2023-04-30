@@ -22,18 +22,12 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-3">
-          <div class="d-flex justify-content-end">
+          <div class="d-flex justify-content-center">
             <app-header class="position-fixed"></app-header>
           </div>
         </div>
-        <div class="col-6">
-          <app-tweet-list></app-tweet-list>
-        </div>
-        <div class="col-3">
-          <div class="d-flex flex-column position-fixed">
-            <app-search class="mb-3 mt-3"></app-search>
-            <app-trend-list></app-trend-list>
-          </div>
+        <div class="col-9">
+          <router-outlet></router-outlet>
         </div>
       </div>
     </div>

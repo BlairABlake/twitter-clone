@@ -9,10 +9,23 @@ import { TrendsModule } from './trends/trends.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LinkComponent } from "./link/link.component";
 import { HomeModule } from './home/home.module';
+import { UserHomeComponent } from './user-home/user-home.component';
+import { ExploreComponent } from './explore/explore.component';
+import { MessagesComponent } from './messages/messages.component';
+import { BookmarksComponent } from './bookmarks/bookmarks.component';
+import { ProfileComponent } from './profile/profile.component';
+import { NotoficationsComponent } from './notofications/notofications.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        UserHomeComponent,
+        ExploreComponent,
+        NotoficationsComponent,
+        MessagesComponent,
+        BookmarksComponent,
+        ProfileComponent,
+        NotoficationsComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

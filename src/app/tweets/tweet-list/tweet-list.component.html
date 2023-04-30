@@ -1,9 +1,8 @@
 <div class="tweet-list">
   <div class="tweet-detail-wrapper" *ngFor="let tweetDetail of tweetDetails">
-    <div class="py-2">
+    <div class="py-3">
       <app-tweet-detail [tweetDetail]="tweetDetail" (expanded)="onExpandDetails()"></app-tweet-detail>
     </div>
-
     <mat-divider></mat-divider>
   </div>
 </div>

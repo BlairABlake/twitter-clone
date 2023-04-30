@@ -9,6 +9,7 @@ import { LinkComponent } from '../link/link.component';
 import { AccountsModule } from "../accounts/accounts.module";
 import { MatButtonModule } from '@angular/material/button';
 import { SearchComponent } from '../search/search.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -28,7 +29,8 @@ import { SearchComponent } from '../search/search.component';
         LinkComponent,
         AccountsModule,
         MatButtonModule,
-        SearchComponent
+        SearchComponent,
+        RouterModule
     ]
 })
 export class HomeModule { }
