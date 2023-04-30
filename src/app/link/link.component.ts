@@ -12,8 +12,8 @@ import { RouterModule } from '@angular/router';
 })
 export class LinkComponent {
   @HostBinding('class') class = 'link'
-  @Input() href = ""
-  @Input() rhref = ""
+  @Input() href = ''
+  @Input() rhref = ''
   @Input() w100 = false
   @Input() textCenter = false
   @Input() flex = false;

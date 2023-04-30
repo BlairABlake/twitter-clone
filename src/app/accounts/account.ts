@@ -4,3 +4,8 @@ export interface Account {
   image: string,
   id: string
 }
+
+export interface AccountState {
+  logged_in: boolean,
+  account: Account
+}

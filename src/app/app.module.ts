@@ -16,6 +16,9 @@ import { BookmarksComponent } from './bookmarks/bookmarks.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NotoficationsComponent } from './notofications/notofications.component';
 import { SearchComponent } from './search/search.component';
+import { StoreModule } from '@ngrx/store';
+import { loginReducer } from './accounts/account.reducer';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
     declarations: [
@@ -39,7 +42,9 @@ import { SearchComponent } from './search/search.component';
         BrowserAnimationsModule,
         LinkComponent,
         HomeModule,
-        SearchComponent
+        SearchComponent,
+        MatDialogModule,
+        StoreModule.forRoot({account: loginReducer})
     ]
 })
 export class AppModule { }

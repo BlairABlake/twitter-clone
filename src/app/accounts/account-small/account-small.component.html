@@ -1,10 +1,25 @@
 
-<app-link>
-  <div class="d-flex align-items-center">
+<app-link *ngIf="!mobile">
+  <div class="d-flex align-items-center" *ngIf="logged_in">
     <button mat-icon-button class="user-image m-3" [style.backgroundImage]="'url(' + account.image + ')'"></button>
     <div class="d-flex flex-column account-name">
-      <span>{{account.displayname}}</span>
-      <span>{{account.username}}</span>
+        <span>{{account.displayname}}</span>
+        <span>{{account.username}}</span>
+    </div>
+  </div>
+  <div *ngIf="!logged_in">
+    <app-link class="rounded p-3 border px-5" (click)="openDialog()">
+      <span>create account</span>
+    </app-link>
+  </div>
+</app-link>
+
+<app-link *ngIf="mobile">
+  <button *ngIf="logged_in" mat-icon-button class="user-image" [style.backgroundImage]="'url(' + account.image + ')'"></button>
+  <div *ngIf="!logged_in">
+    <div class="d-flex justify-content-around p-2 m-1">
+      <app-link class="round" (click)="openDialog()"><span>Login</span></app-link>
+      <app-link class="round" (click)="openDialog()"><span>Sign up</span></app-link>
     </div>
   </div>
 </app-link>

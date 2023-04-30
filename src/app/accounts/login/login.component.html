@@ -1,0 +1,31 @@
+<mat-dialog-actions>
+  <div class="">
+    <app-link class="rounded p-1" (click)="close()">
+      <svg height="1.5rem" viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03"><g><path d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"></path></g></svg>
+    </app-link>
+    <form [formGroup]="formGroup">
+      <div class="d-flex flex-column justify-content-center align-items-center px-5 py-3">
+        <div class="d-flex flex-column justify-content-center">
+          <span class="text-big text-bold mb-4">Create Your Account</span>
+          <mat-form-field appearance="outline">
+            <mat-label>Display Name</mat-label>
+            <input matInput placeholder="Display Name" formControlName="displayname">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name" formControlName="name">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Phone</mat-label>
+            <input matInput placeholder="Phone" formControlName="phone">
+          </mat-form-field>
+        </div>
+        <div>
+          <app-link class="rounded p-3 px-5 w-100" (click)="save()">
+            <span>Create</span>
+          </app-link>
+        </div>
+      </div>
+    </form>
+  </div>
+</mat-dialog-actions>

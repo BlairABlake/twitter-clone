@@ -1,6 +1,7 @@
 :root {
   --text-s-color: rgb(113, 118, 123);
   --font-size-s: 15px;
+  --font-size-b: 31px;
   --font-size-ss: 13px;
   --font-weight-b: 400;
   --line-height-normal: 20px;
@@ -24,4 +25,12 @@ body {
 
 .rounded {
   border-radius: 40px !important;
+}
+
+.text-big {
+  font-size: var(--font-size-b);
+}
+
+.text-bold {
+  font-weight: 700;
 }

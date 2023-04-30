@@ -1,26 +1,33 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AccountsService } from './accounts.service';
 import { AccountSmallComponent } from './account-small/account-small.component';
 import { LinkComponent } from "../link/link.component";
 import { MatButtonModule } from '@angular/material/button';
-import { AccountSmallMobileComponent } from './account-small-mobile/account-small-mobile.component';
+import { LoginComponent } from './login/login.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
     declarations: [
         AccountSmallComponent,
-        AccountSmallMobileComponent
+        LoginComponent,
     ],
     exports: [
         AccountSmallComponent,
-        AccountSmallMobileComponent
     ],
     imports: [
         CommonModule,
         LinkComponent,
-        MatButtonModule
+        MatButtonModule,
+        MatFormFieldModule,
+        MatDialogModule,
+        MatInputModule,
+        FormsModule,
+        ReactiveFormsModule
     ]
 })
 export class AccountsModule { }
